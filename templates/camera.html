@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accident Detection - Camera</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
+    <script src="static/js/camera.js"></script>
+    <style>
+        video {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Accident Detection - Camera</h1>
+    <div id="container">
+        <video id="video" autoplay></video>
+        <button id="start-btn">Start Detection</button>
+        <button id="stop-btn">Stop Detection</button>
+        <div id="result"></div>
+    </div>
+</body>
+</html>

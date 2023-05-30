@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accident Detection - Upload</title>
+</head>
+<body>
+    <h1>Accident Detection - Upload</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="video/mp4">
+        <button type="submit">Upload</button>
+    </form>
+    {% if result %}
+    <div>
+        <h3>Accident Detection Result:</h3>
+        <p>{{ result }}</p>
+    </div>
+    {% endif %}
+</body>
+</html>
